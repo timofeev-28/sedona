@@ -1,0 +1,36 @@
+.body {
+  background-color: #f2f2f2;
+}
+
+.layout {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.container {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.filtering {
+  min-height: 412px;
+  background-color: rgb(66, 83, 105);
+  background-image: url("images/catalog-filter.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
