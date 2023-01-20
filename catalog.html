@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="utf-8">
-  <title>Каталог</title>
+  <title>HTML Academy: Седона</title>
   <link rel="shortcut icon" href="images/favicon.png" type="image/png">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-  <div class="layout">
+  <div class="wrapper">
     <header class="main-header">
       <div class="container">
-        <a class="main-header__logo-link" href="index.html">
-          <img class="main-header__logo" src="images/header-logo.svg" alt="Логотип город Седона">
+        <a class="navigation__logo-link">
+          <img class="navigation__logo" src="images/header-logo.svg" width="140" height="70" alt="Логотип город Седона">
         </a>
         <nav class="main-header__navigation navigation">
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a class="navigation__link navigation__link--current " href="index.html">Главная</a>
+              <a class="navigation__link navigation__link--current">Главная</a>
             </li>
             <li class="navigation__item">
               <a class="navigation__link" href="#">О Седоне</a>
@@ -39,6 +39,7 @@
     </header>
 
     <main class="main-inner">
+
       <header class="inner-header">
         <div class="container">
           <h1 class="inner-header__title">Гостиницы Седоны</h1>
@@ -58,36 +59,36 @@
           <h2 class="visually-hidden">Элементы фильтрации для выбора гостиницы</h2>
           <form class="filtering__form form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="form__col">
-              <p class="filtering__form-title">Инфраструктура</p>
+              <p class="filtering__form-title">Инфраструктура:</p>
               <ul class="filtering__list">
                 <li class="filtering__item">
-                  <input class="filtering__input" type="checkbox" name="swimming-pool" checked>
-                  <label class="filtering__label">Бассейн</label>
+                  <input class="filtering__input" type="checkbox" id="#swimming-pool" name="swimming-pool" checked>
+                  <label class="filtering__label" for="swimming-pool">Бассейн</label>
                 </li>
                 <li class="filtering__item">
-                  <input class="filtering__input" type="checkbox" name="parking" checked>
-                  <label class="filtering__label">Парковка</label>
+                  <input class="filtering__input" type="checkbox" id="#parking" name="parking" checked>
+                  <label class="filtering__label" for="parking">Парковка</label>
                 </li>
                 <li class="filtering__item">
-                  <input class="filtering__input" type="checkbox" name="wi-fi">
-                  <label class="filtering__label">Wi-Fi</label>
+                  <input class="filtering__input" type="checkbox" id="#wi-fi" name="wi-fi">
+                  <label class="filtering__label" for="wi-fi">Wi-Fi</label>
                 </li>
               </ul>
             </div>
             <div class="form__col">
-              <p class="filtering__form-title">Тип Жилья</p>
+              <p class="filtering__form-title">Тип Жилья:</p>
               <ul class="filtering__list">
                 <li class="filtering__item">
-                  <input class="filtering__input" type="radio" name="type-housing" value="hotel" checked>
-                  <label class="filtering__label">Гостиница</label>
+                  <input class="filtering__input" type="radio" id="#type-housing-1" name="type-housing" value="hotel" checked>
+                  <label class="filtering__label" for="type-housing-1">Гостиница</label>
                 </li>
                 <li class="filtering__item">
-                  <input class="filtering__input" type="radio" name="type-housing" value="motel">
-                  <label class="filtering__label">Мотель</label>
+                  <input class="filtering__input" type="radio" id="#type-housing-2" name="type-housing" value="motel">
+                  <label class="filtering__label" for="type-housing-2">Мотель</label>
                 </li>
                 <li class="filtering__item">
-                  <input class="filtering__input" type="radio" name="type-housing" value="apartments">
-                  <label class="filtering__label">Апартаменты</label>
+                  <input class="filtering__input" type="radio" id="#type-housing-3" name="type-housing" value="apartments">
+                  <label class="filtering__label" for="type-housing-3">Апартаменты</label>
                 </li>
               </ul>
             </div>
@@ -112,7 +113,7 @@
             </div>
             <div class="form__col">
               <button class="filtering__btn button" type="submit">применить</button>
-              <button class="filtering__btn filtering__btn--transp" type="button">сбросить</button>
+              <button class="filtering__btn filtering__btn--transp" type="search">сбросить</button>
             </div>
           </form>
         </div>
@@ -140,7 +141,7 @@
               <p class="hotels__item-price">От 4000 ₽</p>
             </div>
             <div class="hotels__wrap-btn">
-              <a href="#" class="hotels__link-btn button">подробнее</a>
+              <a class="hotels__link-btn button" href="#">подробнее</a>
               <button class="hotels__btn-favourit button" type="button">в избранное</button>
             </div>
             <div class="hotels__wrap-rating">
@@ -150,7 +151,7 @@
                 <li class="hotels__star"></li>
                 <li class="hotels__star"></li>
               </ul>
-              <span class="hotels__rating button">Рейтинг: 8,5</span>
+              <div class="hotels__rating button">Рейтинг: 8,5</div>
             </div>
           </li>
         </ul>
@@ -175,7 +176,7 @@
                 <li class="hotels__star"></li>
                 <li class="hotels__star"></li>
               </ul>
-              <span class="hotels__rating button">Рейтинг: 9,2</span>
+              <div class="hotels__rating button">Рейтинг: 9,2</div>
             </div>
           </li>
         </ul>
@@ -199,7 +200,7 @@
                 <li class="hotels__star"></li>
                 <li class="hotels__star"></li>
               </ul>
-              <span class="hotels__rating button">Рейтинг: 6,9</span>
+              <div class="hotels__rating button">Рейтинг: 6,9</div>
             </div>
           </li>
         </ul>
@@ -222,7 +223,7 @@
                 <li class="hotels__star"></li>
                 <li class="hotels__star"></li>
               </ul>
-              <span class="hotels__rating button">Рейтинг: 5,0</span>
+              <div class="hotels__rating button">Рейтинг: 5,0</div>
             </div>
           </li>
         </ul>

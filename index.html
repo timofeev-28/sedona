@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="styles/style.css">
   </head>
   <body class="body">
-    <div class="layout">
+    <div class="wrapper">
       <header class="main-header">
         <div class="container">
+          <a class="navigation__logo-link">
+            <img class="navigation__logo" src="images/header-logo.svg" width="140" height="70" alt="Логотип город Седона">
+          </a>
           <nav class="main-header__navigation navigation">
-            <a class="navigation__logo-link">
-              <img class="navigation__logo" src="images/header-logo.svg" width="140" height="70" alt="Логотип город Седона">
-            </a>
             <ul class="navigation__list">
               <li class="navigation__item">
                 <a class="navigation__link navigation__link--current">Главная</a>
@@ -28,13 +28,13 @@
           </nav>
           <ul class="main-header__list">
             <li class="main-header__item">
-              <a class="main-header__link-search" href="#"></a>
+              <a class="main-header__link-search" href="#" aria-label="Поиск"></a>
             </li>
             <li class="main-header__item">
               <a class="main-header__link-favourites" href="#" aria-label="Избранное"></a>
             </li>
-            <a class="main-header__link button" href="#">хочу сюда</a>
           </ul>
+          <a class="main-header__link button" href="#">хочу сюда</a>
         </div>
       </header>
 
