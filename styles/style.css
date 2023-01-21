@@ -64,13 +64,41 @@ img {
   list-style: none;
 }
 
-/* ---------------------------------------- */
+/* filtering */
 
 .filtering {
   min-height: 412px;
-  background-color: rgb(66, 83, 105);
-  background-image: url("images/catalog-filter.jpg");
+  background-color: rgb(122, 148, 182);
+  background-image: url("../images/catalog-filter.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+/* hotels */
+
+.hotels__pagination {
+  display: flex;
+  gap: 8px;
+}
+
+.pagination__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background-color: #82b3d3;
+  border-radius: 4px;
+}
+
+.pagination__link {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 36px;
+  color: #fff;
+}
+
+.pagination__item--white {
+  background-color: inherit;
 }
