@@ -1,3 +1,28 @@
+/* global */
+
+html {
+  box-sizing: border-box;
+  /*для плавной прокрутки у ЯКОРНЫХ ссылок*/
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* overall */
+
 .body {
   background-color: #f2f2f2;
 }
@@ -13,15 +38,6 @@
   padding-right: 70px;
 }
 
-.filtering {
-  min-height: 412px;
-  background-color: rgb(66, 83, 105);
-  background-image: url("images/catalog-filter.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -33,4 +49,28 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.btn-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* ---------------------------------------- */
+
+.filtering {
+  min-height: 412px;
+  background-color: rgb(66, 83, 105);
+  background-image: url("images/catalog-filter.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
